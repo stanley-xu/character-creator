@@ -3,10 +3,10 @@
   padding-bottom: 64px;
 }
 
-.maxWidthWrapper {
-}
+.maxWidthWrapper {}
 
 .header {
+  width: 65%;
   padding-bottom: 64px;
 }
 
@@ -24,7 +24,18 @@
 }
 
 .characterWrapper {
+  position: fixed;
+  right: 0;
+  top: 128px;
+  width: 35%;
+  min-height: 500px;
+}
+
+.characterWrapper svg {
+  width: 100%;
+  height: 100%;
 }
 
 .controlColumn {
+  width: 50%;
 }
