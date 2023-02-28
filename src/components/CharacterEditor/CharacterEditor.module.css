@@ -3,7 +3,9 @@
   padding-bottom: 64px;
 }
 
-.maxWidthWrapper {}
+.maxWidthWrapper {
+  isolation: isolate;
+}
 
 .header {
   width: 65%;
@@ -38,4 +40,13 @@
 
 .controlColumn {
   width: 50%;
+}
+
+.perspectiveBar {
+  background-color: hsl(195deg, 20%, 86%);
+  width: 100%;
+  height: 40%;
+
+  position: fixed;
+  bottom: 0;
 }
