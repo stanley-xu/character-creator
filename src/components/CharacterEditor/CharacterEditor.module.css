@@ -12,6 +12,12 @@
   padding-bottom: 64px;
 }
 
+@media (max-width: 425px) {
+  .header {
+    display: none;
+  }
+}
+
 .title {
   font-size: 2.5rem;
   font-weight: 600;
@@ -40,6 +46,22 @@
 
 .controlColumn {
   width: 50%;
+}
+
+@media (max-width: 425px) {
+  .controlColumn {
+    position: fixed;
+    bottom: 96px;
+    width: 100%;
+
+    display: flex;
+    overflow: auto;
+  }
+
+  .controlColumn [class^='ControlPane']:not(:last-child) {
+    margin-right: 8px;
+    max-width: 85%;
+  }
 }
 
 .perspectiveBar {
