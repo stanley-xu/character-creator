@@ -12,12 +12,6 @@
   padding-bottom: 64px;
 }
 
-@media (max-width: 425px) {
-  .header {
-    display: none;
-  }
-}
-
 .title {
   font-size: 2.5rem;
   font-weight: 600;
@@ -48,7 +42,11 @@
   width: 50%;
 }
 
-@media (max-width: 425px) {
+@media (max-width: 768px) {
+  .header {
+    display: none;
+  }
+
   .controlColumn {
     position: fixed;
     bottom: 96px;
@@ -61,6 +59,13 @@
   .controlColumn [class^='ControlPane']:not(:last-child) {
     margin-right: 8px;
     max-width: 85%;
+  }
+
+  .characterWrapper {
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    top: 0;
   }
 }
 
